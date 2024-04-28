@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(47, 45, 59);
+  color: white;
+}
+h1 {
+  margin-top: 20px;
+}
+.container {
+  height: 450px;
+  width: 250px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: rgb(39, 37, 53);
+  border: 0.5px solid rgb(134, 130, 130);
+  box-shadow: 5px 5px rgb(127, 125, 131);
+}
+.inputbox {
+  height: 100px;
+
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: self-end;
+  margin: 10px;
+  font-size: 25px;
+  padding-right: 12px;
+  
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(194, 189, 189);
+}
+.operators:hover {
+  color: black;
+}
+.zero {
+  width: 95px;
+}
+.operators {
+  background-color: rgb(171, 168, 175);
+  color: white;
+  cursor: pointer;
+}
+.rows {
+  display: flex;
+  justify-content: space-evenly;
+}
+.keypad {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.output {
+  font-weight: bolder;
+}
