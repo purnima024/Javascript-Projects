@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .start {
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .stop {
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="start">START</button>
+    <button class="stop">STOP</button>
+
+</body>
+<script>
+
+    let RandomColor = function () {
+        const r1 = Math.floor((Math.random() * 255) + 1)
+        const r2 = Math.floor((Math.random() * 255) + 1)
+        const r3 = Math.floor((Math.random() * 255) + 1)
+        return `rgb(${r1},${r2},${r3})`
+    }
+    let interval =
+        document.querySelector('.start').addEventListener('click', function () {
+            interval = setInterval(() => {
+                document.body.style.backgroundColor = RandomColor()
+            }, 1000)
+        });
+    document.querySelector('.stop').addEventListener('click', function () {
+        clearInterval(interval)
+    })
+
+
+</script>
+
+</html>
