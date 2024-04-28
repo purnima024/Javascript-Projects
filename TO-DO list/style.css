@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(4, 4, 53), rgb(61, 4, 56));
+}
+.todo-app {
+  max-width: 540px;
+  margin: auto;
+  padding: 10px 30px 10px;
+  border-radius: 10px;
+}
+.todo-app img {
+  width: 30px;
+  margin-left: 10px;
+}
+.todo-app h2 {
+  color: #df6f13;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-left: 113px;
+}
+.row {
+  display: flex;
+  background-color: #edeef0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 2px;
+  font-weight: 500;
+  font-size: 20px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: rgb(202, 126, 126);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+ol{
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  padding: 12px 8px 12px 50px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+ol li.unchecked {
+  font-size: 25px;
+  padding: 12px 8px 12px 10px;
+
+  cursor: pointer;
+  color: whitesmoke;
+}
+ol li.checked {
+  font-size: 25px;
+  padding: 12px 8px 12px 10px;
+
+  cursor: pointer;
+  color: #555;
+  text-decoration: line-through;
+}
+.reset {
+  display: flex;
+  background-color: #fff;
+  color: black;
+  margin: auto;
+
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.reset:hover {
+  background-color: #555;
+  color: white;
+}
+ .del-button{
+  background-color: black;
+  padding:0px;
+  border-radius: 0px;
+  width: 70px;
+  height: 20px;
+}
