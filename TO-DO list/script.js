@@ -5,7 +5,7 @@ const reset = document.querySelector(".reset");
 
 button.addEventListener("click", function (e) {
   if (input.value === "") {
-    alert("please enter task");
+    alert("Please Enter Your Task");
   } else {
     const div = document.createElement("div");
     div.className = "list";
